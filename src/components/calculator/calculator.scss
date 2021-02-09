@@ -1,14 +1,17 @@
+.calculator-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 .calculator {
   background-color: #ccc;
-  width: 60vmin;
-  height: 70vmin;
+  width: 40rem;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 2rem;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  border-radius: 4vmin;
+  border-radius: 1.6rem;
   overflow: hidden;
-  padding: 10px;
+  padding: 2.0rem;
 
   &__output {
     grid-column-start: 1;
@@ -18,22 +21,39 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 12px;
-    font-size: 60px;
+    padding: 1.2rem;
+    font-size: 6.0rem;
+    background: darkcyan;
+    border-radius: 1.2rem;
+    box-shadow: inset 0px 0px .6rem .2rem #000;
+    overflow: hidden;
+  }
+
+  &__switch{
+   align-self: flex-end;
+    margin-top: 2.0rem;
   }
 }
 
 .key {
   background-color: var(--bg-2);
-  box-shadow: none;
   border: none;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
   color: var(--text);
-  font-size: 4vmin;
+  font-size: 2rem;
   font-weight: 900;
   cursor: pointer;
+  box-shadow: .2rem .2rem .4rem .2rem #000;
 
-  &:hover {
+  &:active{
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:focus{
+    outline: none;
   }
 }
+
+

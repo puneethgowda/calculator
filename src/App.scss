@@ -5,4 +5,10 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+
+  &__switch{
+    position: absolute;
+    top: 2vmin;
+    right: 10vmin;
+  }
 }

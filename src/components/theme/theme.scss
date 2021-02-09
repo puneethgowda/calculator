@@ -1,0 +1,28 @@
+.dark{
+  --bg-1: #000;
+  --bg-2: #666;
+  --text: #fff;
+  --animate:200ms;
+}
+
+.light{
+  --bg-1: #fff;
+  --bg-2: #f0f0f0;
+  --text: #000;
+  --animate:200ms;
+}
+
+body{
+  transition: background-color .6s;
+}
+
+
+body.dark {
+  color:var(--text);
+  background:var(--bg-1);
+}
+
+body.light {
+  color:var(--text);
+  background:var(--bg-1);
+}

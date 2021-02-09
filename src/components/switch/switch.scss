@@ -1,0 +1,39 @@
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  .label {
+    margin: 0 10px;
+  }
+}
+.toggle-switch {
+  background: var(--text);
+  border: 1px solid var(--text);
+  height: 25px;
+  width: 50px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+
+  &--1{
+    background-color: #2bb25a;
+    border: 1px solid #2bb25a;
+  }
+
+  .knob {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: var(--bg-1);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    left: 0;
+    transition: left 0.1s ease-out;
+
+    &--active{
+      left: 24px;
+    }
+  }
+}
