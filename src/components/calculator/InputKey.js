@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const InputKey = ({input, onClick}) => {
-    return (
-        <button className="key" onClick={onClick}>
-            {input}
-        </button>
-    );
+const InputKey = ({ input, onClick }) => {
+  return (
+    <button className="key" onClick={onClick}>
+      {input}
+    </button>
+  );
 };
 
 export default InputKey;
