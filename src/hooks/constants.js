@@ -40,7 +40,7 @@ export const KEYS = {
     value: 0,
   },
   MINUS: {
-    symbol: "-",
+    symbol: "−",
     value: "-",
   },
   PLUS: {
